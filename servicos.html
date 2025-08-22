@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href='favicon.ico'>
+  <title>Fast Ping - Serviços</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navigation -->
+  <header class="bg-gradient-to-r from-[#1E3A8A] to-[#0F172A] text-white shadow-md sticky top-0 z-50">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="logo_fastPing.png" alt="Logo Fast Ping" class="h-10 w-10 rounded-md shadow-md bg-white p-1">
+        <span class="text-2xl font-bold tracking-tight">Fast Ping</span>
+      </a>
+      <ul class="hidden md:flex items-center space-x-6 text-lg">
+        <li><a href="index.html" class="hover:text-orange-400 transition">Home</a></li>
+        <li><a href="servicos.html" class="font-semibold text-orange-400">Serviços</a></li>
+        <li><a href="projetos.html" class="hover:text-orange-400 transition">Projetos</a></li>
+        <li><a href="equipe.html" class="hover:text-orange-400 transition">Equipe</a></li>
+        <li><a href="contato.html" class="hover:text-orange-400 transition">Contato</a></li>
+      </ul>
+      <div class="md:hidden">
+        <button id="menu-btn" class="focus:outline-none">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <div id="menu" class="hidden md:hidden bg-[#1E3A8A] px-4 pb-4">
+      <ul class="space-y-3 text-lg">
+        <li><a href="index.html" class="block hover:text-orange-400 transition">Home</a></li>
+        <li><a href="servicos.html" class="block font-semibold text-orange-400">Serviços</a></li>
+        <li><a href="projetos.html" class="block hover:text-orange-400 transition">Projetos</a></li>
+        <li><a href="equipe.html" class="block hover:text-orange-400 transition">Equipe</a></li>
+        <li><a href="contato.html" class="block hover:text-orange-400 transition">Contato</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Services Section -->
+  <main>
+    <section class="bg-white py-12 md:py-16">
+      <div class="container mx-auto px-6 md:px-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-[#1E3A8A]">Nossos Serviços</h2>
+        
+        <div class="flex justify-center mb-10">
+          <img src="https://static-public.klickpages.com.br/uploads/media/file/5298852/curso-manutencao-de-computadores-presencial-adelia.jpeg" 
+               alt="Serviços de TI" 
+               class="rounded-xl shadow-lg w-full md:w-3/4 lg:w-2/3 h-56 md:h-72 lg:h-96 object-cover">
+        </div>
+
+        <ul class="list-disc pl-6 space-y-4 text-base md:text-lg leading-relaxed max-w-4xl mx-auto">
+          <li><strong>Manutenção de Computadores:</strong> Cuidamos de hardware e software, garantindo operações sem interrupções.</li>
+          <li><strong>Implementação de WorkStations:</strong> Organização ergonômica e gestão de cabos para maior eficiência.</li>
+          <li><strong>Materiais Utilizados:</strong> Anilhas de identificação, organizadores, abraçadeiras plásticas e réguas de energia.</li>
+          <li><strong>Infraestrutura de Redes:</strong> Hardware, cabeamento e protocolos para comunicação eficiente e segura.</li>
+          <li><strong>Principais Dispositivos:</strong> Cabo de rede, switch de 24 portas, patch panel, rack 19'', no-break 600VA.</li>
+          <li><strong>Sistemas de CFTV:</strong> Monitoramento em tempo real com rede de câmeras de alta qualidade.</li>
+          <li><strong>Principais Dispositivos:</strong> DVR 8 portas, câmeras bullet, conectores, cabos RJ45 e fonte 12v.</li>
+          <li><strong>Mídia de Instalação:</strong> Arquivos e dispositivos para instalação ou reinstalação de sistemas operacionais.</li>
+        </ul>
+        <div class="mt-10 flex justify-center">
+          <a href="contato.html" class="px-6 py-3 rounded-lg bg-orange-500 hover:bg-orange-600 text-white font-semibold shadow">Solicitar orçamento</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-50 py-12">
+      <div class="container mx-auto px-6 md:px-12">
+        <h3 class="text-2xl md:text-3xl font-bold text-center mb-10 text-[#1E3A8A]">Destaques dos serviços</h3>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white rounded-xl shadow p-6">
+            <div class="w-12 h-12 rounded-lg bg-orange-100 text-orange-600 flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6"><path d="M9 12.75a.75.75 0 01.75-.75h3a.75.75 0 010 1.5h-3a.75.75 0 01-.75-.75z"/><path fill-rule="evenodd" d="M2.25 6.75A2.25 2.25 0 014.5 4.5h15a2.25 2.25 0 012.25 2.25v10.5A2.25 2.25 0 0119.5 19.5h-15A2.25 2.25 0 012.25 17.25V6.75zm2.25 0v10.5h15V6.75h-15z" clip-rule="evenodd"/></svg>
+            </div>
+            <h4 class="font-semibold text-lg mb-2 text-[#1E3A8A]">Workstations organizadas</h4>
+            <p class="text-gray-600">Organização de cabos, ergonomia e produtividade para seu time render mais.</p>
+          </div>
+          <div class="bg-white rounded-xl shadow p-6">
+            <div class="w-12 h-12 rounded-lg bg-orange-100 text-orange-600 flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6"><path d="M3 5.25A2.25 2.25 0 015.25 3h13.5A2.25 2.25 0 0121 5.25v13.5A2.25 2.25 0 0118.75 21H5.25A2.25 2.25 0 013 18.75V5.25z"/><path d="M7.5 7.5h9v9h-9v-9z"/></svg>
+            </div>
+            <h4 class="font-semibold text-lg mb-2 text-[#1E3A8A]">Redes de alta performance</h4>
+            <p class="text-gray-600">Cabeamento estruturado e ativos de rede para conexões estáveis e seguras.</p>
+          </div>
+          <div class="bg-white rounded-xl shadow p-6">
+            <div class="w-12 h-12 rounded-lg bg-orange-100 text-orange-600 flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6"><path d="M12 2.25a9.75 9.75 0 100 19.5 9.75 9.75 0 000-19.5zM12 6a1 1 0 110 2 1 1 0 010-2zm-1 4.25a1 1 0 00-1 1V16a1 1 0 001 1h2a1 1 0 001-1v-1.75a1 1 0 00-1-1H11v-2h2a1 1 0 100-2h-2z"/></svg>
+            </div>
+            <h4 class="font-semibold text-lg mb-2 text-[#1E3A8A]">Segurança e CFTV</h4>
+            <p class="text-gray-600">Monitoramento por câmeras com acesso remoto e gravação confiável.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#1E3A8A] text-white text-center py-6 mt-12">
+    <p class="text-sm">&copy; 2025 Fast Ping. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    // Script do menu mobile
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    if (menuBtn && menu) {
+      menuBtn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    }
+  </script>
+
+</body>
+</html>

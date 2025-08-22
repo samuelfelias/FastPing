@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" type="image/x-icon" href='favicon.ico'>
+  <title>Fast Ping - Projetos</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    nav a:hover { color: #F97316; transition: color 0.3s ease; }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navbar -->
+  <!-- Header atualizado -->
+  <header class="bg-gradient-to-r from-[#1E3A8A] to-[#0F172A] text-white shadow-md sticky top-0 z-50">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="logo_fastPing.png" alt="Logo Fast Ping" class="h-10 w-10 rounded-md shadow-md bg-white p-1">
+        <span class="text-2xl font-bold tracking-tight">Fast Ping</span>
+      </a>
+      <ul class="hidden md:flex items-center space-x-6 text-lg">
+        <li><a href="index.html" class="hover:text-orange-400 transition">Home</a></li>
+        <li><a href="servicos.html" class="hover:text-orange-400 transition">Serviços</a></li>
+        <li><a href="projetos.html" class="font-semibold text-orange-400">Projetos</a></li>
+        <li><a href="equipe.html" class="hover:text-orange-400 transition">Equipe</a></li>
+        <li><a href="contato.html" class="hover:text-orange-400 transition">Contato</a></li>
+      </ul>
+      <div class="md:hidden">
+        <button id="menu-btn" class="focus:outline-none">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <div id="menu" class="hidden md:hidden bg-[#1E3A8A] px-4 pb-4">
+      <ul class="space-y-3 text-lg">
+        <li><a href="index.html" class="block hover:text-orange-400 transition">Home</a></li>
+        <li><a href="servicos.html" class="block hover:text-orange-400 transition">Serviços</a></li>
+        <li><a href="projetos.html" class="block font-semibold text-orange-400">Projetos</a></li>
+        <li><a href="equipe.html" class="block hover:text-orange-400 transition">Equipe</a></li>
+        <li><a href="contato.html" class="block hover:text-orange-400 transition">Contato</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Projects -->
+  <main>
+    <section class="bg-white py-12 md:py-16">
+      <div class="container mx-auto px-6 md:px-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-[#1E3A8A]">Projetos</h2>
+
+        <!-- Imagem -->
+        <div class="flex justify-center mb-10">
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden w-full md:w-3/4 lg:w-2/3">
+            <img src="6a85265d-2b26-4e00-8ba5-2b152839232f.jpg" alt="Imagem do Projeto" class="w-full h-56 md:h-72 lg:h-96 object-cover">
+          </div>
+        </div>
+
+        <!-- Descrição -->
+        <div class="max-w-4xl mx-auto">
+          <h3 class="text-2xl md:text-3xl font-semibold mb-4">Implantação de Cabeamento Estruturado na Cotemig - Belo Horizonte/MG</h3>
+          <p class="text-base md:text-lg mb-6 leading-relaxed">
+            O projeto consiste em serviços de implantação de cabeamento estruturado nas dependências da empresa Cotemig em Belo Horizonte/MG, com fornecimento de materiais para aplicação.
+          </p>
+
+          <ul class="list-disc pl-6 mb-6 space-y-2 text-base md:text-lg leading-relaxed">
+            <li>Construção de infra-estrutura em eletrocalha 200 x 50mm lisa (sem tampa), fixada com tirante no teto.</li>
+            <li>Fornecimento e lançamento de cabo UTP de 4 pares Cat.6.</li>
+            <li>Instalação de 140 tomadas CM8V em caixas de sobrepor.</li>
+            <li>Instalação de 2 patch panels de 24 portas.</li>
+            <li>Instalação de 140 patch cords RJ45/RJ45 Cat6.</li>
+            <li>Mão de obra especializada: Engenheiro, técnico, auxiliar e ajudante.</li>
+          </ul>
+
+          <!-- Valores -->
+          <div class="bg-gray-50 border-l-4 border-[#1E3A8A] p-4 rounded-md mb-6">
+            <p class="text-base md:text-lg"><strong>Serviços:</strong> R$ 20.000,01</p>
+            <p class="text-base md:text-lg"><strong>Materiais:</strong> R$ 40.000,02</p>
+          </div>
+
+          <!-- Notas -->
+          <h4 class="text-lg md:text-xl font-semibold mb-2">Notas:</h4>
+          <p class="text-base md:text-lg mb-4">Os serviços serão realizados em dias úteis, dentro do horário comercial.</p>
+
+          <!-- Condições -->
+          <h4 class="text-lg md:text-xl font-semibold mb-2">Condições Gerais:</h4>
+          <p class="text-base md:text-lg"><strong>Prazo:</strong> Até 35 dias corridos após autorização.</p>
+          <p class="text-base md:text-lg"><strong>Pagamento:</strong> 20% à vista e 80% contra entrega.</p>
+          <p class="text-base md:text-lg"><strong>Nota:</strong> Em caso de atrasos do cliente, poderá haver faturamento parcial dos serviços concluídos.</p>
+          <div class="mt-8 p-4 rounded-lg bg-blue-50 border-l-4 border-blue-600">
+            <p class="text-blue-800">Tem um projeto parecido? <a href="contato.html" class="underline hover:text-blue-900">Fale conosco</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#1E3A8A] text-white text-center py-6">
+    <p class="text-sm">&copy; 2025 Fast Ping. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    if (menuBtn && menu) menuBtn.addEventListener('click', () => menu.classList.toggle('hidden'));
+  </script>
+</body>
+</html>
